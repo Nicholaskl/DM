@@ -6,6 +6,7 @@ import numpy as np
 from scipy.io import arff
 import matplotlib.pyplot as plt
 
+
 data_file = 'kddcup.data_10_percent_corrected_10000_samples.arff'
 data, meta = arff.loadarff(data_file)
 df=pd.DataFrame(data=data)
@@ -100,3 +101,9 @@ print("nearest sample = ",nearest)
 
 
 # %%
+import arff
+
+arff.dump('test.arff'
+      , df.values
+      , relation='relation name'
+      , names=df.columns)
