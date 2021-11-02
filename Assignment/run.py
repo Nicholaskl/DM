@@ -398,6 +398,14 @@ def modelCompare(test, X_train, y_train):
     print("===================")
     print(scores)
     print(numZeroOne)
+    # numZeroOne.columns = ["knn", "decision tree", "naive bayes"]
+    # scores.groupby('Class').size().plot.bar()
+    # plt.bar(["0.0", "1.0"], [650, 650])
+    # numZeroOne.plot.bar()
+    # plt.ylabel('Number of times present')
+    # plt.xlabel('Models')
+    # plt.title('Number of 0s and 1s in model predictions')
+    # plt.show()
 
 def prediction(X_test, x, y):
     """
